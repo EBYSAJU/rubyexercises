@@ -6,15 +6,22 @@ class Student
     @email
     @username
     @password
-def first_name=(firstname)
+    def initialize(firstname,lastname,email,username,password)
+        @first_name=firstname
+        @last_name=lastname
+        @email=email
+        @username=username
+        @password=password
+    end
+    def first_name=(firstname)
     @first_name=firstname
-end
-def first_name
+    end
+    def first_name
     @first_name
-end
-def to_s
+    end
+    def to_s
     "first name:#{@first_name}"
-end
+    end
 
 end
 eby=Student.new
